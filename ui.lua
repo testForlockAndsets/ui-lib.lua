@@ -25,7 +25,7 @@ library.theme = {
     tilesize = 90,
     cursor = false,
     cursorimg = "https://t0.rbxcdn.com/42f66da98c40252ee151326a82aab51f",
-    backgroundcolor = Color3.fromRGB(20, 20, 20),
+    backgroundcolor = Color3.fromRGB(255, 98, 20),
     tabstextcolor = Color3.fromRGB(240, 240, 240),
     bordercolor = Color3.fromRGB(60, 60, 60),
     accentcolor = Color3.fromRGB(255, 0, 0),
@@ -74,7 +74,7 @@ function library:CreateWatermark(name, position)
     local gamename = marketplaceservice:GetProductInfo(game.PlaceId).Name
     local watermark = { }
     watermark.Visible = true
-    watermark.text = " " .. name:gsub("{game}", gamename):gsub("{fps}", "0 FPS") .. " "
+    watermark.text = "TAY.XYZ " .. name:gsub("{game}", gamename):gsub("{fps}", "0 FPS") .. " "
 
     watermark.main = Instance.new("ScreenGui", coregui)
     watermark.main.Name = "Watermark"
